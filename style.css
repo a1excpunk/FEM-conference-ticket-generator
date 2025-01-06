@@ -1,0 +1,40 @@
+:root {
+    /* Neutral Colors */
+    --neutral-0: hsl(0, 0%, 100%);
+    --neutral-300: hsl(252, 6%, 83%);
+    --neutral-500: hsl(245, 15%, 58%);
+    --neutral-700: hsl(245, 19%, 35%);
+    --neutral-900: hsl(248, 70%, 10%);
+
+    /* Orange Colors */
+    --orange-500: hsl(7, 88%, 67%);
+    --orange-700: hsl(7, 71%, 60%);
+
+    /* Gradient */
+    --gradient-text: linear-gradient(hsl(7, 86%, 67%), hsl(0, 0%, 100%));
+
+    /* Font Sizes */
+    --font-size-labels: 20px;
+
+    /* Font Family */
+    --font-family: 'Inconsolata', monospace;
+
+    /* Font Weights */
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+    --font-weight-extra-bold: 800;
+
+}
+
+body {
+    background-image: url('./assets/images/background-desktop.png');
+    color: var(--neutral-0);
+}
+
+#ticket__page {}
+
+.hide {
+    display: none;
+
+}
