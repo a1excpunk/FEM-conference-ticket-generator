@@ -1,44 +1,63 @@
 :root {
-    /* Neutral Colors */
-    --neutral-0: hsl(0, 0%, 100%);
-    --neutral-300: hsl(252, 6%, 83%);
-    --neutral-500: hsl(245, 15%, 58%);
-    --neutral-700: hsl(245, 19%, 35%);
-    --neutral-900: hsl(248, 70%, 10%);
-
-    /* Orange Colors */
-    --orange-500: hsl(7, 88%, 67%);
-    --orange-700: hsl(7, 71%, 60%);
-
-    /* Gradient */
-    --gradient-text: linear-gradient(hsl(7, 86%, 67%), hsl(0, 0%, 100%));
-
-    /* Font Sizes */
-    --font-size-labels: 20px;
-
-    /* Font Family */
-    --font-family: 'Inconsolata', monospace;
-
-    /* Font Weights */
-    --font-weight-regular: 400;
-    --font-weight-medium: 500;
-    --font-weight-bold: 700;
-    --font-weight-extra-bold: 800;
-
+  /* Neutral Colors */
+  --neutral-0: hsl(0, 0%, 100%);
+  --neutral-300: hsl(252, 6%, 83%);
+  --neutral-500: hsl(245, 15%, 58%);
+  --neutral-700: hsl(245, 19%, 35%);
+  --neutral-900: hsl(248, 70%, 10%);
+  /* Orange Colors */
+  --orange-500: hsl(7, 88%, 67%);
+  --orange-700: hsl(7, 71%, 60%);
+  /* Gradient */
+  --gradient-text: linear-gradient(hsl(7, 86%, 67%), hsl(0, 0%, 100%));
+  /* Font Sizes */
+  --font-size-labels: 20px;
+  /* Font Family */
+  --font-family: "Inconsolata", monospace;
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 800;
 }
 
 body {
-    background-image: url('./assets/images/background-desktop.png');
-    color: var(--neutral-0);
+  background-image: url("./assets/images/background-desktop.png");
+  color: var(--neutral-0);
 }
 
-#ticket__page {}
+#avatar__name {
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .hide {
-    display: none;
+  display: none;
 }
 
-.attribution{
-    position: absolute;
-    bottom: 20px;
+.attribution {
+  position: absolute;
+  bottom: 20px;
 }
+
+.ticket {
+  position: relative;
+  border: 2px solid line;
+  padding: 20px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, var(--neutral-900), var(--neutral-500));
+}
+.ticket::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  padding: 2px;
+  bottom: -2px;
+  left: -2px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, var(--neutral-0), var(--orange-700));
+  border-radius: 10px;
+}/*# sourceMappingURL=style.css.map */

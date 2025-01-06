@@ -9,15 +9,17 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&family=Inconsolata:wdth,wght@50..200,200..900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | Conference ticket generator</title>
   </head>
   <body>
-    <section class="form__page">
+    <section class="form__page hide">
       <img src="./assets/images/logo-full.svg" alt="logo" />
       <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
       <p>Secure your spot at next year's biggest coding conference.</p>
@@ -60,28 +62,33 @@
       </form>
     </section>
 
-    <!-- Generated ticket -->
     <section class="ticket__page">
       <img src="./assets/images/logo-full.svg" alt="logo" />
-      <h1>Congrats, <span>Full Name</span>! Your ticket is ready.</h1>
+      <h1>
+        Congrats, <span id="avatar__name">Full Name</span>! Your ticket is
+        ready.
+      </h1>
       <p>
         We've emailed your ticket to
-        <span>Email Address</span>
+        <span class="avatar__email">Email Address</span>
         and will send updates in the run up to the event.
       </p>
 
       <div class="ticket">
-        <img src="./assets/images/logo-full.svg" alt="logo" />
-        <div class="ticket__date__place">
-          <p>Jan 31, 2025 / Austin, TX</p>
-        </div>
-        <div class="ticket__avatar">
-          <img src="./assets/images/image-avatar.jpg" alt="avatar" />
-        </div>
         <div class="ticket__details">
-          <h2>Full Name</h2>
-          <h2>GitHub Username</h2>
+          <img src="./assets/images/logo-full.svg" alt="logo" />
+          <div class="ticket__date__place">
+            <p>Jan 31, 2025 / Austin, TX</p>
+          </div>
+          <div class="ticket__avatar">
+            <img src="./assets/images/image-avatar.jpg" alt="avatar" />
+          </div>
+          <div class="avatar__details">
+            <h2>Full Name</h2>
+            <h2>GitHub Username</h2>
+          </div>
         </div>
+        <div class="ticket__number">#00000001</div>
       </div>
     </section>
 
